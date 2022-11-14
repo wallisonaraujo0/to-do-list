@@ -1,12 +1,11 @@
-import { Express } from "express"
+const express = require("express")
 
- const server = express()
- const app = 
+ const app = express()
 
  app.get("/",(req,res)=>{
-    res.render(()=>{
-
-    })
+    res.send("<h1>blablabla</h1>")
  })
 
- server.listen(3131)
+ app.listen(3000,()=>{
+    console.log("servido rodando")
+ })
